@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer 360</title>
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .result-may-like {
+        background-color: #e1e2f6;
+        border-radius: 49px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+  </head>
+  <body class="bg-light-blue">
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <input
+                type="text"
+                placeholder="Search..."
+                class="fs-21px weight-4 white search-input"
+                autofocus
+              />
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <div class="container-wrapper py-100px">
+      <p class="fs-62px dark-gray weight-8 mb-15px">
+        Your Searched For "<span class="user-searched">
+          <!-- Mobile App Mockup Template --> </span
+        >"
+      </p>
+      <p class="fs-43px dark-gray weight-5">Search results you may like :</p>
+    </div>
+
+    <!-- DISCOVER STARTS -->
+    <div class="result-may-like mb-100px">
+      <div class="container-wrapper py-100px">
+        <div class="discover-cards mb-60px">
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DISCOVER ENDS -->
+
+    <!-- RECENT STARTS -->
+    <div class="mb-100px">
+      <div class="container-wrapper">
+        <p class="text-center fs-40px dark-gray weight-7 mb-50px">
+          Related Keymatch Suggestions
+        </p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- RECENT ENDS -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let userSearchResult = document.querySelector(".user-searched");
+      let searchInput = document.querySelector(".search-input");
+
+      searchInput.addEventListener("input", (e) => {
+        userSearchResult.innerHTML = e.target.value;
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          850: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+          },
+
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="./javascript/tabs.js"></script>
+    <link rel="stylesheet" href="./css/ratings.css" />
+    <script defer src="./javascript/ratings.js"></script>
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+  </head>
+  <body class="bg-light-blue">
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <a href="./search.html" class="navbar-search-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="fs-21px weight-4 white"
+                />
+              </a>
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <div class="py-100px">
+      <div class="container-wrapper">
+        <div class="cart-wrapper">
+          <div class="no-product mb-50px">
+            <img src="./assets/images/add-to-cart.png" class="mb-30px" alt="" />
+            <p class="fs-25px weight-5 darkest-blue mb-10px">
+              You have no products in your Cart
+            </p>
+            <a
+              href="#"
+              class="underline block fs-30px pointer darkest-blue weight-8"
+              >Back to shopping</a
+            >
+          </div>
+
+          <form action="" class="cart-input">
+            <input
+              type="text"
+              placeholder="Search your items  here..."
+              class="gray fs-20px"
+            />
+            <button type="submit" class="pointer">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

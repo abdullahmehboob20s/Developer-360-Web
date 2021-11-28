@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="./javascript/tabs.js"></script>
+    <link rel="stylesheet" href="./css/ratings.css" />
+    <script defer src="./javascript/ratings.js"></script>
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+  </head>
+  <body class="bg-light-blue">
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <a href="./search.html" class="navbar-search-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="fs-21px weight-4 white"
+                />
+              </a>
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-some-icons">
+              <a
+                href="./cart.html"
+                class="white navbar-cart-icon fs-20px weight-8"
+                >Cart
+                <div class="navbar-some-icon">
+                  <img src="./assets/images/cart-icon.png" alt="" /></div
+              ></a>
+              <a
+                href="./cart.html"
+                class="white navbar-cart-icon fs-20px weight-8"
+                >Profile
+                <div class="navbar-some-icon">
+                  <i class="far fa-user"></i>
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-some-icons">
+              <a
+                href="./cart.html"
+                class="white navbar-cart-icon fs-20px weight-8"
+                >Cart
+                <div class="navbar-some-icon">
+                  <i class="fas fa-shopping-cart"></i></div
+              ></a>
+              <a
+                href="./cart.html"
+                class="white navbar-cart-icon fs-20px weight-8"
+                >Profile
+                <div class="navbar-some-icon">
+                  <i class="far fa-user"></i>
+                </div>
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+    <div class="profile-wrapper">
+      <div class="profile-sidebar tab-header">
+        <div class="sidebar-item pointer active">
+          <i class="fas fa-user"></i>
+          <p class="fs-20px weight-6">Account Information</p>
+        </div>
+        <div class="sidebar-item pointer">
+          <i class="fas fa-lock"></i>
+          <p class="fs-20px weight-6">Password</p>
+        </div>
+        <div class="sidebar-item pointer">
+          <i class="far fa-arrow-alt-circle-down"></i>
+          <p class="fs-20px weight-6">Purchases</p>
+        </div>
+      </div>
+      <div class="tab-content flex-1">
+        <div class="profile-content active">
+          <p class="fs-25px gray-3 weight-7 mb-20px">
+            Profile > Account Information
+          </p>
+
+          <div class="account-detail-list mb-50px">
+            <div class="account-detail-list-head">
+              <i class="fas fa-user purple"></i>
+              <p class="fs-20px weight-6 gray-3">Account Information</p>
+            </div>
+
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Name</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">Rahul Sharma</p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Email Address</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">
+                  iamrahulsh02@gmail.com
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Address Line 1</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">
+                  idhar hi kahi, Delhi
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Address Line 2</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">
+                  ye bhi same, Delhi
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">ZIP Code</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">1100XX</p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              profile-button
+              pointer
+              bg-purple
+              white
+              fs-25px
+              weight-8
+              block
+            "
+          >
+            Save changes
+          </div>
+        </div>
+        <div class="profile-content">
+          <p class="fs-25px gray-3 weight-7 mb-20px">Profile > Password</p>
+
+          <div class="account-detail-list mb-50px">
+            <div class="account-detail-list-head">
+              <i class="fas fa-lock purple"></i>
+              <p class="fs-20px weight-6 gray-3">Change Password</p>
+            </div>
+
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Password</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">nhaibtaunga</p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">
+                  Re-Confirm Password
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">yevinhibtaunga</p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Address Line 1</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">
+                  idhar hi kahi, Delhi
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">Address Line 2</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">
+                  ye bhi same, Delhi
+                </p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+            <div class="list-tile">
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-5">ZIP Code</p>
+              </div>
+              <div class="list-tile-item">
+                <p class="fs-20px gray-3 weight-6 opacity-7">1100XX</p>
+              </div>
+              <div class="list-tile-item">
+                <i class="fas fa-chevron-right gray-3 opacity-7"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="
+              profile-button
+              pointer
+              bg-purple
+              white
+              fs-25px
+              weight-8
+              block
+            "
+          >
+            Save changes
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <p class="fs-25px gray-3 weight-7 mb-20px">Profile > Purchases</p>
+
+          <div class="account-detail-list purchase-list mb-50px">
+            <div class="account-detail-list-head">
+              <i class="far fa-arrow-alt-circle-down purple"></i>
+              <p class="fs-20px weight-6 gray-3">Downloads</p>
+            </div>
+
+            <!--  -->
+            <!--  -->
+            <div class="purchase-item">
+              <div class="purchase-item-content title">
+                <img
+                  class="purchase-item-img"
+                  src="./assets/images/recent-img.png"
+                  alt=""
+                />
+
+                <div>
+                  <p class="fs-22px gray-3 weight-6 mb-5px">
+                    Mobile App mockup Template
+                  </p>
+                  <div class="discover-card-profile">
+                    <div>
+                      <img src="./assets/images/discover-profile.png" alt="" />
+                      <p class="fs-20px gray weight-5">by someone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-item-content">
+                <p class="gray text-center mb-10px weight-6">
+                  Rate this product ?
+                </p>
+                <div class="smileybox">
+                  <label for="r1" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r1"
+                      onchange="ratingStar(event)"
+                  /></label>
+
+                  <label for="r2" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r2"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r3" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r3"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r4" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r4"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r5" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r5"
+                      onchange="ratingStar(event)"
+                  /></label>
+                </div>
+              </div>
+              <div class="purchase-item-content">
+                <button
+                  class="purchase-item-btn pointer white fs-22px weight-4"
+                >
+                  Download
+                  <i class="fas fa-angle-double-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="purchase-item">
+              <div class="purchase-item-content title">
+                <img
+                  class="purchase-item-img"
+                  src="./assets/images/recent-img.png"
+                  alt=""
+                />
+
+                <div>
+                  <p class="fs-22px gray-3 weight-6 mb-5px">
+                    Mobile App mockup Template
+                  </p>
+                  <div class="discover-card-profile">
+                    <div>
+                      <img src="./assets/images/discover-profile.png" alt="" />
+                      <p class="fs-20px gray weight-5">by someone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-item-content">
+                <p class="gray text-center mb-10px weight-6">
+                  Rate this product ?
+                </p>
+                <div class="smileybox">
+                  <label for="r1" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r1"
+                      onchange="ratingStar(event)"
+                  /></label>
+
+                  <label for="r2" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r2"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r3" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r3"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r4" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r4"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r5" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r5"
+                      onchange="ratingStar(event)"
+                  /></label>
+                </div>
+              </div>
+
+              <div class="purchase-item-content">
+                <button
+                  class="purchase-item-btn pointer white fs-22px weight-4"
+                >
+                  Download
+                  <i class="fas fa-angle-double-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="purchase-item">
+              <div class="purchase-item-content title">
+                <img
+                  class="purchase-item-img"
+                  src="./assets/images/recent-img.png"
+                  alt=""
+                />
+
+                <div>
+                  <p class="fs-22px gray-3 weight-6 mb-5px">
+                    Mobile App mockup Template
+                  </p>
+                  <div class="discover-card-profile">
+                    <div>
+                      <img src="./assets/images/discover-profile.png" alt="" />
+                      <p class="fs-20px gray weight-5">by someone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-item-content">
+                <p class="gray text-center mb-10px weight-6">
+                  Rate this product ?
+                </p>
+                <div class="smileybox">
+                  <label for="r1" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r1"
+                      onchange="ratingStar(event)"
+                  /></label>
+
+                  <label for="r2" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r2"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r3" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r3"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r4" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r4"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r5" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r5"
+                      onchange="ratingStar(event)"
+                  /></label>
+                </div>
+              </div>
+
+              <div class="purchase-item-content">
+                <button
+                  class="purchase-item-btn pointer white fs-22px weight-4"
+                >
+                  Download
+                  <i class="fas fa-angle-double-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="purchase-item">
+              <div class="purchase-item-content title">
+                <img
+                  class="purchase-item-img"
+                  src="./assets/images/recent-img.png"
+                  alt=""
+                />
+
+                <div>
+                  <p class="fs-22px gray-3 weight-6 mb-5px">
+                    Mobile App mockup Template
+                  </p>
+                  <div class="discover-card-profile">
+                    <div>
+                      <img src="./assets/images/discover-profile.png" alt="" />
+                      <p class="fs-20px gray weight-5">by someone</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="purchase-item-content">
+                <p class="gray text-center mb-10px weight-6">
+                  Rate this product ?
+                </p>
+                <div class="smileybox">
+                  <label for="r1" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r1"
+                      onchange="ratingStar(event)"
+                  /></label>
+
+                  <label for="r2" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r2"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r3" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r3"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r4" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r4"
+                      onchange="ratingStar(event)"
+                  /></label>
+                  <label for="r5" class="check"
+                    ><input
+                      type="checkbox"
+                      id="r5"
+                      onchange="ratingStar(event)"
+                  /></label>
+                </div>
+              </div>
+
+              <div class="purchase-item-content">
+                <button
+                  class="purchase-item-btn pointer white fs-22px weight-4"
+                >
+                  Download
+                  <i class="fas fa-angle-double-down"></i>
+                </button>
+              </div>
+            </div>
+            <!--  -->
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

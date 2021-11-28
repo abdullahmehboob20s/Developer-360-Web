@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="./javascript/tabs.js"></script>
+    <link rel="stylesheet" href="./css/ratings.css" />
+    <script defer src="./javascript/ratings.js"></script>
+
+    <link rel="stylesheet" href="./css/accordion.css" />
+    <script defer src="./javascript/accordion.js"></script>
+
+    <script defer src="./javascript/file-upload.js"></script>
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+
+    <script defer src="./javascript/app.js"></script>
+
+    <style>
+      .summary {
+        display: flex;
+        gap: 4rem;
+      }
+      .summary-left {
+        flex: 1;
+      }
+      .summary-right {
+        flex: 0.5;
+      }
+
+      .billing-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        background-color: white;
+        border: 2px solid #70707052;
+        border-radius: 10px;
+        padding: 2.5rem;
+        box-shadow: 0 3px 6px #00000071;
+      }
+      .order-summary {
+        background-color: white;
+        border: 2px solid #70707052;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px #00000071;
+      }
+      .billing-details label {
+        width: 100%;
+      }
+      .billing-details input {
+        background-color: white;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #70707073;
+        padding: 1.1rem 2rem;
+        outline: none;
+      }
+      .billing-details > div:nth-child(1) {
+        grid-column: 1/-1;
+      }
+      .billing-details > div:nth-child(4) {
+        grid-column: 1/-1;
+      }
+
+      .order-summary-content {
+        padding: 1rem;
+      }
+
+      .order-summary .pricing {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .order-summary .pricing img {
+        width: 106.48px;
+        height: 73px;
+        object-fit: cover;
+        border-radius: 20px 10px 0 0;
+      }
+
+      .order-details > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .order-ammount {
+        padding: 1rem;
+        border-top: 2px solid #70707062;
+      }
+
+      #custom-button {
+        padding: 0 1.5rem;
+        background-color: #ebebeb;
+        cursor: pointer;
+      }
+
+      #custom-text {
+        margin-left: 1.5rem;
+        font-family: sans-serif;
+        color: #aaa;
+        display: flex;
+        align-items: center;
+      }
+
+      .file-upload-wrapper {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #d4d4d4;
+        max-width: 548px;
+        width: 100%;
+        height: 56px;
+        display: flex;
+      }
+
+      .order-form-btn {
+        text-align: center;
+        background-color: #6c47f9;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+      }
+
+      @media (max-width: 1000px) {
+        .summary {
+          gap: 2rem;
+          flex-direction: column-reverse;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .billing-details {
+          gap: 1rem;
+          padding: 1.4rem;
+          grid-template-columns: 1fr;
+        }
+
+        .pricing {
+          margin-bottom: 2rem;
+        }
+
+        .billing-details > div:nth-child(1) {
+          grid-column: unset;
+        }
+        .billing-details > div:nth-child(4) {
+          grid-column: unset;
+        }
+
+        .file-upload-wrapper {
+          width: 100%;
+          height: auto;
+          flex-direction: column-reverse;
+        }
+
+        .file-upload-wrapper span,
+        #custom-button {
+          padding: 1rem;
+        }
+
+        .order-whatsapp-btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light-blue">
+    <!-- REGISTER STARTS -->
+    <div class="register-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">
+            No Account ? Signup
+          </p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Registration takes less than a minute but gives you full control
+            over your orders.
+          </p>
+        </div>
+        <div class="register-form mb-15px">
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Full Name"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Password"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Re-Enter Password"
+          />
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <p class="text-center fs-20px darkest-blue weight-5 mb-15px">or</p>
+
+        <button class="google-login fs-25px weight-5 pointer gray mb-30px">
+          <img src="./assets/images/google-icon.png" alt="" /> Continue with
+          Google
+        </button>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Already have an account ? <a href="#" class="purple">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER ENDS -->
+
+    <!-- LOGIN STARTS -->
+    <div class="login-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">Welcome Back !</p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Enter Your Emai & Password to sign in.
+          </p>
+        </div>
+
+        <div class="register-form mb-30px">
+          <div>
+            <label
+              for="email-address"
+              class="fs-25px weight-4 gray block mb-10px"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              id="email-address"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+          <div>
+            <label for="password" class="fs-25px weight-4 gray block mb-10px"
+              >Password</label
+            >
+            <input
+              type="text"
+              id="password"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+
+          <div class="form-remember mb-20px">
+            <div class="form-group">
+              <input type="checkbox" id="html" />
+              <label for="html" class="fs-25px gray weight-4"
+                >Remember Me</label
+              >
+            </div>
+            <a href="#" class="purple fs-25px weight-4">Forgot Password ?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Not have an account yet ? <a href="#" class="purple">Signup now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN ENDS -->
+
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <a href="./search.html" class="navbar-search-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="fs-21px weight-4 white"
+                />
+              </a>
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- summary STARTS -->
+    <div class="py-100px">
+      <div class="container-wrapper">
+        <div class="summary">
+          <div class="summary-left">
+            <p class="fs-25px gray-3 weight-8 mb-30px">
+              Cart > Billing Details
+            </p>
+
+            <form action="" class="billing-details mb-50px">
+              <div>
+                <label for="name" class="block fs-20px weight-6 mb-5px gray"
+                  >Full Name</label
+                >
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="email" class="block fs-20px weight-6 mb-5px gray"
+                  >Email Address</label
+                >
+                <input type="text" id="email" />
+              </div>
+              <div>
+                <label for="zip" class="block fs-20px weight-6 mb-5px gray"
+                  >Zip</label
+                >
+                <input type="text" id="zip" />
+              </div>
+              <div>
+                <label for="address" class="block fs-20px weight-6 mb-5px gray"
+                  >Address</label
+                >
+                <input type="text" id="address" />
+              </div>
+            </form>
+
+            <div class="accordion">
+              <div class="link-parent">
+                <div class="link">
+                  <div class="fs-20px gray">
+                    <i class="fab fa-whatsapp"></i>
+                    <p class="weight-7">About Me</p>
+                  </div>
+                  <i
+                    class="
+                      fas
+                      fa-chevron-down
+                      fs-20px
+                      gray
+                      accordion-down-arrow
+                    "
+                  ></i>
+                </div>
+                <div class="link-accordion">
+                  <div class="link-accordion-content">
+                    <p class="fs-18px gray weight-5 mb-20px">
+                      We accept whats app orders
+                    </p>
+
+                    <button class="order-whatsapp-btn pointer white fs-20px">
+                      <i class="fab fa-whatsapp"></i>
+                      <p class="weight-5 fs-20px">Order on whatsapp</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="link-parent">
+                <div class="link">
+                  <div class="fs-20px gray">
+                    <i class="fas fa-qrcode"></i>
+                    <p class="weight-7">Pay on UPI</p>
+                  </div>
+                  <i
+                    class="
+                      fas
+                      fa-chevron-down
+                      fs-20px
+                      gray
+                      accordion-down-arrow
+                    "
+                  ></i>
+                </div>
+
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <div class="link-accordion">
+                  <div class="link-accordion-content">
+                    <p class="fs-18px gray weight-5 mb-20px">
+                      Please pay on this qr code and upload the payment proof
+                    </p>
+
+                    <img src="./assets/images/qr-code.png" alt="" />
+
+                    <p class="fs-18px gray weight-5 mb-20px">
+                      Upload image for proof
+                    </p>
+
+                    <div class="file-upload-wrapper mb-30px">
+                      <input type="file" id="real-file" hidden="hidden" />
+                      <button
+                        type="button"
+                        class="fs-18px weight-5"
+                        id="custom-button"
+                      >
+                        Choose File
+                      </button>
+                      <span id="custom-text">No file choosen</span>
+                    </div>
+
+                    <button
+                      class="pointer order-form-btn fs-20px white weight-5"
+                    >
+                      Submit Now
+                    </button>
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <!--  -->
+              </div>
+
+              <div class="link-parent">
+                <div class="link">
+                  <div class="fs-20px gray">
+                    <i class="fas fa-wallet"></i>
+                    <p class="weight-7">Pay with my account balance</p>
+                  </div>
+                  <i
+                    class="
+                      fas
+                      fa-chevron-down
+                      fs-20px
+                      gray
+                      accordion-down-arrow
+                    "
+                  ></i>
+                </div>
+                <div class="link-accordion">
+                  <div class="link-accordion-content">
+                    <p class="fs-18px gray weight-5 mb-20px">
+                      You currently have $1,375.00 on your account balance.
+                    </p>
+
+                    <button
+                      class="pointer order-form-btn fs-20px white weight-5"
+                    >
+                      Pay with your account balance.
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="summary-right">
+            <p class="fs-25px gray-3 weight-8 mb-30px">Order Summary</p>
+
+            <div class="order-summary">
+              <div class="order-summary-content mb-20px">
+                <div class="pricing mb-25px">
+                  <img src="./assets/images/discover-card-img.png" alt="" />
+                  <div>
+                    <p class="fs-20px gray weight-7 mb-5px">
+                      Square Style Mobile UI Kit (Sketch)
+                    </p>
+                    <p class="purple fs-16px weight-7">Price : ₹50/-</p>
+                  </div>
+                </div>
+
+                <div class="order-details">
+                  <div class="mb-15px">
+                    <p class="fs-20px gray weight-4">Subtotal</p>
+                    <p class="fs-20px gray weight-4">₹50/-</p>
+                  </div>
+                  <div>
+                    <p class="fs-20px gray weight-4">Coupan Discount</p>
+                    <p class="fs-20px gray weight-4">80%</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="order-ammount text-center fs-30px weight-4 gray">
+                ₹40.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- summary ENDS -->
+  </body>
+</html>

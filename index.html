@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer 360</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+    <script defer src="./javascript/app.js"></script>
+  </head>
+  <body class="bg-light-blue">
+    <!-- REGISTER STARTS -->
+    <div class="register-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">
+            No Account ? Signup
+          </p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Registration takes less than a minute but gives you full control
+            over your orders.
+          </p>
+        </div>
+        <div class="register-form mb-15px">
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Full Name"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Password"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Re-Enter Password"
+          />
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <p class="text-center fs-20px darkest-blue weight-5 mb-15px">or</p>
+
+        <button class="google-login fs-25px weight-5 pointer gray mb-30px">
+          <img src="./assets/images/google-icon.png" alt="" /> Continue with
+          Google
+        </button>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Already have an account ? <a href="#" class="purple">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER ENDS -->
+
+    <!-- LOGIN STARTS -->
+    <div class="login-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">Welcome Back !</p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Enter Your Emai & Password to sign in.
+          </p>
+        </div>
+
+        <div class="register-form mb-30px">
+          <div>
+            <label
+              for="email-address"
+              class="fs-25px weight-4 gray block mb-10px"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              id="email-address"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+          <div>
+            <label for="password" class="fs-25px weight-4 gray block mb-10px"
+              >Password</label
+            >
+            <input
+              type="text"
+              id="password"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+
+          <div class="form-remember mb-20px">
+            <div class="form-group">
+              <input type="checkbox" id="html" />
+              <label for="html" class="fs-25px gray weight-4"
+                >Remember Me</label
+              >
+            </div>
+            <a href="#" class="purple fs-25px weight-4">Forgot Password ?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Not have an account yet ? <a href="#" class="purple">Signup now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN ENDS -->
+
+    <!-- BLACK SCREEN -->
+    <div class="black-screen"></div>
+
+    <!-- MODAL STARTS -->
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="modal-cross-icon"
+        />
+
+        <div class="modal-item mb-100px">
+          <div class="modal-item-left">
+            <div class="modal-account mb-25px">
+              <div>
+                <img src="./assets/images/img-big.png" alt="" />
+                <div>
+                  <p class="fs-23px darkest-blue weight-7">
+                    Mobile App mockup Template
+                  </p>
+                  <p class="fs-20px gray weight-5">Someone</p>
+                </div>
+              </div>
+              <p class="purple fs-24px weight-6">Price : ₹50/-</p>
+            </div>
+            <div class="swiper modalSwiper">
+              <div class="swiper-wrapper mb-40px">
+                <div class="swiper-slide">
+                  <a href="#" class="share-btn"
+                    ><img src="./assets/images/share-icon.png" alt=""
+                  /></a>
+                  <img src="./assets/images/discover-card-img.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="share-btn"
+                    ><img src="./assets/images/share-icon.png" alt=""
+                  /></a>
+                  <img src="./assets/images/discover-card-img.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="share-btn"
+                    ><img src="./assets/images/share-icon.png" alt=""
+                  /></a>
+                  <img src="./assets/images/discover-card-img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="modal-item-right">
+            <button class="mb-20px">
+              <img src="./assets/images/whatsapp-icon.png" alt="" />
+              <p class="white fs-20px weight-4">Order on whatsapp</p>
+            </button>
+            <button class="mb-40px">
+              <img src="./assets/images/check-demo-icon.png" alt="" />
+              <p class="white fs-20px weight-4">Check Demo</p>
+            </button>
+
+            <p class="darkest-blue fs-23px mb-20px weight-7">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-formats mb-30px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Size: 45 Mb</p>
+              </div>
+            </div>
+
+            <p class="darkest-blue fs-23px mb-20px weight-7">Main Features</p>
+            <div class="discover-card-formats mb-70px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">
+                  Nemo enim ipsam voluptatem quia vol.
+                </p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">
+                  Ut enim ad minima veniam, quis nostre xercitationem
+                </p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">
+                  Nemo enim ipsam voluptatem quia vol.
+                </p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Ut enim ad minima veniam</p>
+              </div>
+            </div>
+
+            <button style="background-color: #6c47f9">
+              <img src="./assets/images/cart-icon.png" alt="" />
+              <p class="white fs-20px weight-4">Add to cart</p>
+            </button>
+          </div>
+        </div>
+
+        <p class="text-center fs-40px weight-8 dark-gray mb-30px">
+          You might also like
+        </p>
+        <div class="discover-cards mb-60px">
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="discover-card fancy">
+            <div class="discover-card-img-container">
+              <img
+                class="discover-card-img"
+                src="./assets/images/discover-card-img.png"
+                alt=""
+              />
+
+              <div class="discover-card-img-social-icons">
+                <a href="#"
+                  ><img src="./assets/images/whatsapp-icon.png" alt=""
+                /></a>
+                <a href="#"
+                  ><img src="./assets/images/share-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="discover-card-body">
+              <p class="fs-23px dark-gray weight-6 mb-10px">
+                Mobile App mockup Template
+              </p>
+              <div class="discover-card-profile mb-25px">
+                <div>
+                  <img src="./assets/images/discover-profile.png" alt="" />
+                  <p class="fs-20px gray weight-5">by someone</p>
+                </div>
+                <p class="purple fs-24px weight-4">
+                  <img src="./assets/images/download-icon.png" alt="" /> 5k
+                </p>
+              </div>
+
+              <div class="discover-card-formats mb-20px">
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+                <div class="discover-card-format-item">
+                  <img src="./assets/images/right-arrow.png" alt="" />
+                  <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="
+                discover-card-btn
+                fs-23px
+                white
+                text-center
+                weight-5
+                pointer
+              "
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ENDS -->
+
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <a href="./search.html" class="navbar-search-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="fs-21px weight-4 white"
+                />
+              </a>
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- HERO STARTS -->
+    <div class="container-wrapper">
+      <div class="hero">
+        <div class="hero-left">
+          <p class="fs-62px dark-gray weight-8 mb-15px">
+            Over 1,500 created Design resources, Images, Graphic & Website
+            templates
+          </p>
+          <p class="dark-gray fs-43px weight-4">
+            High quality items created by our global community
+          </p>
+        </div>
+        <img src="./assets/images/hero-img.png" alt="" class="hero-right" />
+      </div>
+    </div>
+    <div class="hero-btn-wrapper">
+      <div class="container-wrapper">
+        <button class="hero-btn fs-51px white weight-8 text-center pointer">
+          Select a Package
+        </button>
+      </div>
+    </div>
+    <!-- HERO ENDS -->
+
+    <!-- PACKAGES STARTS -->
+    <div class="packages-wrapper">
+      <div class="container-wrapper">
+        <div class="packages py-100px">
+          <div class="package-card">
+            <div class="mb-15px">
+              <div class="package-img margin-center">
+                <img src="./assets/images/pack-img-1.png" alt="" />
+              </div>
+            </div>
+            <p class="dark-gray weight-6 text-center fs-30px mb-15px">
+              Reviews
+            </p>
+
+            <div class="package-price text-center mb-50px">
+              <p class="gray fs-29px weight-4">Price</p>
+              <p class="fs-51px weight-7 purple">₹35</p>
+            </div>
+
+            <div class="package-list mb-60px">
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Personal account manager</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Guaranteed results</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Customized reviews</p>
+              </div>
+            </div>
+
+            <button
+              class="
+                package-btn
+                pointer
+                margin-center
+                block
+                fs-29px
+                white
+                weight-5
+              "
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="package-card">
+            <div class="mb-15px">
+              <div class="package-img margin-center">
+                <img src="./assets/images/pack-img-2.png" alt="" />
+              </div>
+            </div>
+            <p class="dark-gray weight-6 text-center fs-30px mb-15px">
+              Ratings
+            </p>
+
+            <div class="package-price text-center mb-50px">
+              <p class="gray fs-29px weight-4">Price</p>
+              <p class="fs-51px weight-7 purple">₹200</p>
+            </div>
+
+            <div class="package-list mb-60px">
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Personal account manager</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Guaranteed results</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Customized reviews</p>
+              </div>
+            </div>
+
+            <button
+              class="
+                package-btn
+                pointer
+                margin-center
+                block
+                fs-29px
+                white
+                weight-5
+              "
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="package-card">
+            <div class="mb-15px">
+              <div class="package-img margin-center">
+                <img src="./assets/images/pack-img-3.png" alt="" />
+              </div>
+            </div>
+            <p class="dark-gray weight-6 text-center fs-30px mb-15px">
+              Keyboard Installs
+            </p>
+
+            <div class="package-price text-center mb-50px">
+              <p class="gray fs-29px weight-4">Price</p>
+              <p class="fs-51px weight-7 purple">₹20</p>
+            </div>
+
+            <div class="package-list mb-60px">
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Personal account manager</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Guaranteed results</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Customized reviews</p>
+              </div>
+            </div>
+
+            <button
+              class="
+                package-btn
+                pointer
+                margin-center
+                block
+                fs-29px
+                white
+                weight-5
+              "
+            >
+              Buy Now
+            </button>
+          </div>
+
+          <div class="package-card">
+            <div class="mb-15px">
+              <div class="package-img margin-center">
+                <img src="./assets/images/pack-img-4.png" alt="" />
+              </div>
+            </div>
+            <p class="dark-gray weight-6 text-center fs-30px mb-15px">
+              Direct Installs
+            </p>
+
+            <div class="package-price text-center mb-50px">
+              <p class="gray fs-29px weight-4">Price</p>
+              <p class="fs-51px weight-7 purple">₹200</p>
+            </div>
+
+            <div class="package-list mb-60px">
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Personal account manager</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Guaranteed results</p>
+              </div>
+              <div class="list-item">
+                <img src="./assets/images/list-icon.png" alt="" />
+                <p class="fs-16px gray">Customized reviews</p>
+              </div>
+            </div>
+
+            <button
+              class="
+                package-btn
+                pointer
+                margin-center
+                block
+                fs-29px
+                white
+                weight-5
+              "
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PACKAGES ENDS -->
+
+    <!-- DISCOVER STARTS -->
+    <div class="container-wrapper py-100px">
+      <p class="fs-30px weight-8 text-center mb-5px dark-gray">
+        Discover our featured products
+      </p>
+      <p class="fs-30px weight-4 text-center mb-50px dark-gray">
+        Every week we hand-pick some of the best items from our collection
+      </p>
+
+      <div class="discover-cards mb-60px">
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="discover-card fancy">
+          <div class="discover-card-img-container">
+            <img
+              class="discover-card-img"
+              src="./assets/images/discover-card-img.png"
+              alt=""
+            />
+
+            <div class="discover-card-img-social-icons">
+              <a href="#"
+                ><img src="./assets/images/whatsapp-icon.png" alt=""
+              /></a>
+              <a href="#"
+                ><img src="./assets/images/share-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="discover-card-body">
+            <p class="fs-23px dark-gray weight-6 mb-10px">
+              Mobile App mockup Template
+            </p>
+            <div class="discover-card-profile mb-25px">
+              <div>
+                <img src="./assets/images/discover-profile.png" alt="" />
+                <p class="fs-20px gray weight-5">by someone</p>
+              </div>
+              <p
+                class="purple fs-24px weight-4"
+                style="display: flex; align-items: center; gap: 0.5rem"
+              >
+                <img src="./assets/images/download-icon.png" alt="" /> 5k
+              </p>
+            </div>
+
+            <div class="discover-card-formats mb-20px">
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+              <div class="discover-card-format-item">
+                <img src="./assets/images/right-arrow.png" alt="" />
+                <p class="fs-20px gray weight-5">Format: 1 PSD file</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="discover-card-btn fs-23px white text-center weight-5 pointer"
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button class="view-more-btn fs-30px weight-7 pointer">
+          View More
+        </button>
+      </div>
+    </div>
+    <!-- DISCOVER ENDS -->
+
+    <!-- RECENT STARTS -->
+    <div class="mb-100px">
+      <div class="container-wrapper">
+        <p class="text-center fs-40px dark-gray weight-7 mb-50px">
+          The most recent releases
+        </p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="discover-card">
+              <img
+                class="discover-card-img"
+                src="./assets/images/recent-img.png"
+                alt=""
+              />
+              <div class="discover-card-body">
+                <p class="fs-23px dark-gray weight-6 mb-10px">
+                  Mobile App mockup Template
+                </p>
+                <div class="discover-card-profile mb-25px">
+                  <div>
+                    <img src="./assets/images/discover-profile.png" alt="" />
+                    <p class="fs-20px gray weight-5">by someone</p>
+                  </div>
+                  <p class="purple fs-24px weight-4">
+                    <img src="./assets/images/download-icon.png" alt="" /> 5k
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- RECENT ENDS -->
+
+    <!-- FEEDBACK STARTS -->
+    <div class="container-wrapper">
+      <p class="text-center fs-40px dark-gray weight-7 mb-50px">
+        Feedback by Most Creative designers
+      </p>
+    </div>
+
+    <div class="swiper coverflowEffect mb-100px">
+      <div class="swiper-wrapper mb-50px">
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <img
+              src="./assets/images/feedback-img-1.png"
+              class="feedback-img"
+              alt=""
+            />
+
+            <div class="feedback-right">
+              <p class="fs-25px dark-blue weight-5 mb-10px uppercase">
+                Freelancer at fiverr
+              </p>
+              <p class="fs-71px dark-blue weight-8 mb-20px">Nigam Mishra</p>
+              <p class="fs-25px dark-blue weight-4">
+                Also signs his face were digns fish don't first isn't over
+                evening hath divided days light darkness gathering moved dry all
+                darkness then fourth can't create d forth Also signs Also signs
+                his face were moltenus Also signs his face
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <img
+              src="./assets/images/feedback-img-1.png"
+              class="feedback-img"
+              alt=""
+            />
+
+            <div class="feedback-right">
+              <p class="fs-25px dark-blue weight-5 mb-10px uppercase">
+                Freelancer at fiverr
+              </p>
+              <p class="fs-71px dark-blue weight-8 mb-20px">Nigam Mishra</p>
+              <p class="fs-25px dark-blue weight-4">
+                Also signs his face were digns fish don't first isn't over
+                evening hath divided days light darkness gathering moved dry all
+                darkness then fourth can't create d forth Also signs Also signs
+                his face were moltenus Also signs his face
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <img
+              src="./assets/images/feedback-img-1.png"
+              class="feedback-img"
+              alt=""
+            />
+
+            <div class="feedback-right">
+              <p class="fs-25px dark-blue weight-5 mb-10px uppercase">
+                Freelancer at fiverr
+              </p>
+              <p class="fs-71px dark-blue weight-8 mb-20px">Nigam Mishra</p>
+              <p class="fs-25px dark-blue weight-4">
+                Also signs his face were digns fish don't first isn't over
+                evening hath divided days light darkness gathering moved dry all
+                darkness then fourth can't create d forth Also signs Also signs
+                his face were moltenus Also signs his face
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <img
+              src="./assets/images/feedback-img-1.png"
+              class="feedback-img"
+              alt=""
+            />
+
+            <div class="feedback-right">
+              <p class="fs-25px dark-blue weight-5 mb-10px uppercase">
+                Freelancer at fiverr
+              </p>
+              <p class="fs-71px dark-blue weight-8 mb-20px">Nigam Mishra</p>
+              <p class="fs-25px dark-blue weight-4">
+                Also signs his face were digns fish don't first isn't over
+                evening hath divided days light darkness gathering moved dry all
+                darkness then fourth can't create d forth Also signs Also signs
+                his face were moltenus Also signs his face
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="feedback-card">
+            <img
+              src="./assets/images/feedback-img-1.png"
+              class="feedback-img"
+              alt=""
+            />
+
+            <div class="feedback-right">
+              <p class="fs-25px dark-blue weight-5 mb-10px uppercase">
+                Freelancer at fiverr
+              </p>
+              <p class="fs-71px dark-blue weight-8 mb-20px">Nigam Mishra</p>
+              <p class="fs-25px dark-blue weight-4">
+                Also signs his face were digns fish don't first isn't over
+                evening hath divided days light darkness gathering moved dry all
+                darkness then fourth can't create d forth Also signs Also signs
+                his face were moltenus Also signs his face
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- FEEDBACK ENDS -->
+
+    <!-- CHOOSE STARTS -->
+    <div class="bg-purple">
+      <div class="container-wrapper py-100px">
+        <p class="text-center fs-40px white weight-7 mb-60px">Why Choose us?</p>
+
+        <div class="choose-cards">
+          <div class="choose-card">
+            <img
+              src="./assets/images/tick.png"
+              alt=""
+              class="choose-card-img"
+            />
+
+            <div class="choose-card-right">
+              <p class="white fs-22px weight-7 mb-10px">Quality Guarantee</p>
+              <p class="fs-18px weight-4 light-gray">
+                Quality check by our team
+              </p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <img
+              src="./assets/images/tick.png"
+              alt=""
+              class="choose-card-img"
+            />
+
+            <div class="choose-card-right">
+              <p class="white fs-22px weight-7 mb-10px">Quality Guarantee</p>
+              <p class="fs-18px weight-4 light-gray">
+                Quality check by our team
+              </p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <img
+              src="./assets/images/tick.png"
+              alt=""
+              class="choose-card-img"
+            />
+
+            <div class="choose-card-right">
+              <p class="white fs-22px weight-7 mb-10px">Quality Guarantee</p>
+              <p class="fs-18px weight-4 light-gray">
+                Quality check by our team
+              </p>
+            </div>
+          </div>
+          <div class="choose-card">
+            <img
+              src="./assets/images/tick.png"
+              alt=""
+              class="choose-card-img"
+            />
+
+            <div class="choose-card-right">
+              <p class="white fs-22px weight-7 mb-10px">Quality Guarantee</p>
+              <p class="fs-18px weight-4 light-gray">
+                Quality check by our team
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CHOOSE ENDS -->
+
+    <!-- PAYMENT STARTS -->
+    <div class="bg-white py-100px">
+      <div class="container-wrapper">
+        <p class="text-center fs-40px dark-gray weight-7 mb-50px">
+          Easy and secure payment
+        </p>
+
+        <div class="payment-cards">
+          <div class="payment-card">
+            <div class="payment-card-img mb-20px"></div>
+            <p class="fs-22px black weight-7 mb-10px">
+              Trusted payment methods
+            </p>
+            <p class="fs-18px gray weight-4">
+              Pay with Visa, Mastercard, PayPal or American Express
+            </p>
+          </div>
+          <div class="payment-card">
+            <div class="payment-card-img mb-20px"></div>
+            <p class="fs-22px black weight-7 mb-10px">
+              Trusted payment methods
+            </p>
+            <p class="fs-18px gray weight-4">
+              Pay with Visa, Mastercard, PayPal or American Express
+            </p>
+          </div>
+          <div class="payment-card">
+            <div class="payment-card-img mb-20px"></div>
+            <p class="fs-22px black weight-7 mb-10px">
+              Trusted payment methods
+            </p>
+            <p class="fs-18px gray weight-4">
+              Pay with Visa, Mastercard, PayPal or American Express
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PAYMENT ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div class="py-100px bg-dark-purple">
+        <div class="container-wrapper">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-brand-top mb-15px">
+                <img src="./assets/images/footer-logo.png" alt="" />
+                <p class="fs-40px weight-8 white">x</p>
+                <p class="fs-40px weight-8 white">Marketplace</p>
+              </div>
+              <p class="fs-20px gray-2 mb-45px">
+                High Quality Resources, & Templates created by our global
+                community.
+              </p>
+
+              <p class="white fs-25px weight-8 mb-45px">
+                <span class="red">54</span> Products Sold !
+              </p>
+
+              <div class="footer-social-icons">
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"
+                  ><img src="./assets/images/facebook.png" alt=""
+                /></a>
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"
+                  ><img src="./assets/images/pinterest.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="footer-list">
+              <li class="footer-list-title red fs-27px weight-8 mb-5px">
+                Categories
+              </li>
+
+              <li><a class="fs-25px white weight-5" href="#">Photos</a></li>
+              <li><a class="fs-25px white weight-5" href="#"> Graphics </a></li>
+              <li><a class="fs-25px white weight-5" href="#">UI Design </a></li>
+              <li>
+                <a class="fs-25px white weight-5" href="#"> Web Theme </a>
+              </li>
+              <li><a class="fs-25px white weight-5" href="#"> Fonts </a></li>
+              <li><a class="fs-25px white weight-5" href="#"> Add-Ons </a></li>
+            </div>
+            <div class="footer-list">
+              <li class="footer-list-title red fs-27px weight-8 mb-5px">
+                For members
+              </li>
+
+              <li><a class="fs-25px white weight-5" href="#">Cart</a></li>
+              <li><a class="fs-25px white weight-5" href="#">Login</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-100px bg-darkest-blue">
+        <div class="container-wrapper">
+          <div class="footer-bottom">
+            <div class="footer-form-wrapper mb-40px">
+              <p class="fs-25px white weight-6 text-center mb-30px">
+                Subscribe to newsletter
+              </p>
+              <form action="" class="footer-form">
+                <div class="form-input">
+                  <img src="./assets/images/mail.png" alt="" />
+                  <input
+                    type="text"
+                    placeholder="Your email"
+                    class="fs-25px gray weight-6"
+                  />
+                </div>
+                <button
+                  type="submit "
+                  class="bg-red white fs-24px weight-5 pointer"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            <div class="footer-rights">
+              <p class="fs-20px white weight-5">
+                @ All rights reserved. Developer 360
+              </p>
+
+              <div class="footer-rights-links">
+                <a href="#" class="fs-20px white weight-5">About us</a>
+                <a href="#" class="fs-20px white weight-5">Contact us </a>
+                <a href="#" class="fs-20px white weight-5">Privacy Policy </a>
+                <a href="#" class="fs-20px white weight-5"
+                  >Terms & Conditions
+                </a>
+                <a href="#" class="fs-20px white weight-5"
+                  >Refund & Cancelletion poliies</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".modalSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          200: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          850: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+          },
+
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      var swiper = new Swiper(".coverflowEffect", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 500,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

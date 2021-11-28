@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="stylesheet" href="./css/dropdown.css" />
+    <script defer src="./javascript/dropdown.js"></script>
+    <script defer src="./javascript/sidebar.js"></script>
+
+    <script defer src="./javascript/app.js"></script>
+  </head>
+  <body class="bg-light-blue">
+    <!-- REGISTER STARTS -->
+    <div class="register-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">
+            No Account ? Signup
+          </p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Registration takes less than a minute but gives you full control
+            over your orders.
+          </p>
+        </div>
+        <div class="register-form mb-15px">
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Full Name"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Password"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Re-Enter Password"
+          />
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <p class="text-center fs-20px darkest-blue weight-5 mb-15px">or</p>
+
+        <button class="google-login fs-25px weight-5 pointer gray mb-30px">
+          <img src="./assets/images/google-icon.png" alt="" /> Continue with
+          Google
+        </button>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Already have an account ? <a href="#" class="purple">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER ENDS -->
+
+    <!-- LOGIN STARTS -->
+    <div class="login-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">Welcome Back !</p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Enter Your Emai & Password to sign in.
+          </p>
+        </div>
+
+        <div class="register-form mb-30px">
+          <div>
+            <label
+              for="email-address"
+              class="fs-25px weight-4 gray block mb-10px"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              id="email-address"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+          <div>
+            <label for="password" class="fs-25px weight-4 gray block mb-10px"
+              >Password</label
+            >
+            <input
+              type="text"
+              id="password"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+
+          <div class="form-remember mb-20px">
+            <div class="form-group">
+              <input type="checkbox" id="html" />
+              <label for="html" class="fs-25px gray weight-4"
+                >Remember Me</label
+              >
+            </div>
+            <a href="#" class="purple fs-25px weight-4">Forgot Password ?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Not have an account yet ? <a href="#" class="purple">Signup now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN ENDS -->
+    <!-- NAVBAR STARTS -->
+    <nav>
+      <div class="container-wrapper">
+        <div class="navbar">
+          <div class="navbar-top">
+            <a href="/">
+              <img
+                class="brand-img"
+                src="./assets/images/brand-logo.png"
+                alt=""
+              />
+            </a>
+
+            <div class="navbar-search">
+              <!--  -->
+              <!--  -->
+              <div class="dropdown">
+                <div class="nav-search-dropdown-btn">
+                  <p class="fs-21px white weight-6">All items</p>
+                  <img src="./assets/images/dropdown-arrow.png" alt="" />
+                </div>
+                <div class="search-dropdown-wrapper">
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                  <a href="#" class="search-dropdown-item fs-20px gray weight-8"
+                    >All items</a
+                  >
+                </div>
+              </div>
+
+              <a href="./search.html" class="navbar-search-input-wrapper">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="fs-21px weight-4 white"
+                />
+              </a>
+
+              <button class="search-btn">
+                <img src="./assets/images/search-icon.png" alt="" />
+              </button>
+            </div>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+
+            <img src="/assets/images/hamburger.png" alt="" class="hamburger" />
+          </div>
+
+          <div class="navbar-links">
+            <img
+              src="./assets/images/cross-icon.png"
+              class="nav-cross-icon"
+              alt=""
+            />
+            <a href="/" class="white fs-18px weight-5">Home</a>
+            <a href="./products.html" class="white fs-18px weight-5">Photos</a>
+            <a href="./order-summary.html" class="white fs-18px weight-5"
+              >Graphics</a
+            >
+            <a href="#" class="white fs-18px weight-5">UI Design</a>
+            <a href="#" class="white fs-18px weight-5">Web Theme</a>
+            <a href="#" class="white fs-18px weight-5">Fonts</a>
+            <a href="#" class="white fs-18px weight-5">Add-Ons</a>
+            <a href="./profile.html" class="white fs-18px weight-5">Profile</a>
+
+            <div class="navbar-btns">
+              <a href="#" class="white fs-21px weight-6 abc-login">Login</a>
+              <a href="#" class="white fs-21px weight-6 abc-register"
+                >Register</a
+              >
+              <a href="./cart.html" class="white"
+                ><img src="./assets/images/cart-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- PAGE DETAILS STARTS -->
+    <div
+      style="background-color: rgba(79, 85, 199, 0.2)"
+      class="py-30px mb-80px"
+    >
+      <div class="container-wrapper page-details">
+        <p class="fs-35px black weight-6">Blog</p>
+
+        <div class="pages-name">
+          <img src="./assets/images/home.png" alt="" />
+          <p class="fs-18px dark-blue weight-4">Home</p>
+          <span>></span>
+          <p class="fs-18px dark-blue weight-4">Blog</p>
+          <span>></span>
+          <p class="fs-18px dark-blue weight-4">
+            Designing engaging mobile experiences
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- PAGE DETAILS ENDS -->
+
+    <div class="mb-40px">
+      <div class="container-wrapper owner-details">
+        <div class="owner-details-head mb-10px">
+          <img src="./assets/images/owner.png" alt="" />
+          <p class="fs-18px weight-4 dark-blue">Rahul Sharma | 24 Aug 2021</p>
+        </div>
+        <p class="fs-35px weight-8 darkest-blue">
+          Designing engaging mobile experiences
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-70px">
+      <div class="container-wrapper">
+        <p class="fs-20px weight-4 dark-gray mb-25px">
+          Lorem ipsum dolor sit amet. Ab dolorem similique non suscipit impedit
+          non odit neque At dolorum ratione aut quas impedit. Quo molestiae
+          eveniet est dignissimos laborum et rerum nihil ut voluptas nulla ut
+          adipisci minus. In minus voluptas sed Quis aliquam ad architecto nemo
+          et consequatur voluptates non error illum.
+        </p>
+        <p class="fs-20px weight-4 dark-gray mb-25px">
+          Ea molestiae magni in atque enim a voluptatum corrupti et incidunt
+          quas. Sed rerum ducimus et fuga nisi qui accusamus consequatur ut quia
+          pariatur vel culpa atque. Sed voluptatibus nihil non quos ducimus et
+          commodi quas ut nemo esse et culpa laudantium ut quia ullam.
+        </p>
+        <p class="fs-20px weight-4 dark-gray mb-25px">
+          Et impedit cupiditate ab rerum atque qui deleniti voluptas ab dolorum
+          doloremque. Sit tenetur velit sed incidunt dolorem aut temporibus
+          porro aut itaque consequatur. Sed veritatis magni aut molestias nulla
+          sit accusamus Quis sit voluptatem neque.Lorem ipsum dolor sit amet. Ab
+          dolorem similique non suscipit impedit non odit neque At dolorum
+          ratione aut quas impedit. Quo molestiae eveniet est dignissimos
+          laborum et rerum nihil ut voluptas nulla ut adipisci minus. In minus
+          voluptas sed Quis aliquam ad architecto nemo et consequatur voluptates
+          non error illum.
+        </p>
+        <p class="fs-20px weight-4 dark-gray mb-25px">
+          Ea molestiae magni in atque enim a voluptatum corrupti et incidunt
+          quas. Sed rerum ducimus et fuga nisi qui accusamus consequatur ut quia
+          pariatur vel culpa atque. Sed voluptatibus nihil non quos ducimus et
+          commodi quas ut nemo esse et culpa laudantium ut quia ullam.
+        </p>
+        <p class="fs-20px weight-4 dark-gray mb-25px">
+          Et impedit cupiditate ab rerum atque qui deleniti voluptas ab dolorum
+          doloremque. Sit tenetur velit sed incidunt dolorem aut temporibus
+          porro aut itaque consequatur. Sed veritatis magni aut molestias nulla
+          sit accusamus Quis sit voluptatem neque.
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-70px">
+      <div class="container-wrapper">
+        <div class="mb-50px">
+          <p class="margin-center fs-35px weight-8 underline w-fit-content">
+            You may also like
+          </p>
+        </div>
+
+        <div class="suggestions">
+          <div class="suggestion-card">
+            <img src="./assets/images/suggest.png" class="mb-10px" alt="" />
+            <p class="text-center fs-20px weight-8 darkest-blue">
+              Shoot like a pro, Tips & Tricks
+            </p>
+          </div>
+          <div class="suggestion-card">
+            <img src="./assets/images/suggest.png" class="mb-10px" alt="" />
+            <p class="text-center fs-20px weight-8 darkest-blue">
+              Shoot like a pro, Tips & Tricks
+            </p>
+          </div>
+          <div class="suggestion-card">
+            <img src="./assets/images/suggest.png" class="mb-10px" alt="" />
+            <p class="text-center fs-20px weight-8 darkest-blue">
+              Shoot like a pro, Tips & Tricks
+            </p>
+          </div>
+          <div class="suggestion-card">
+            <img src="./assets/images/suggest.png" class="mb-10px" alt="" />
+            <p class="text-center fs-20px weight-8 darkest-blue">
+              Shoot like a pro, Tips & Tricks
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER STARTS -->
+    <footer>
+      <div class="py-100px bg-dark-purple">
+        <div class="container-wrapper">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-brand-top mb-15px">
+                <img src="./assets/images/footer-logo.png" alt="" />
+                <p class="fs-40px weight-8 white">x</p>
+                <p class="fs-40px weight-8 white">Marketplace</p>
+              </div>
+              <p class="fs-20px gray-2 mb-45px">
+                High Quality Resources, & Templates created by our global
+                community.
+              </p>
+
+              <p class="white fs-25px weight-8 mb-45px">
+                <span class="red">54</span> Products Sold !
+              </p>
+
+              <div class="footer-social-icons">
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"
+                  ><img src="./assets/images/facebook.png" alt=""
+                /></a>
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"><img src="./assets/images/twitter.png" alt="" /></a>
+                <a href="#"
+                  ><img src="./assets/images/pinterest.png" alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="footer-list">
+              <li class="footer-list-title red fs-27px weight-8 mb-5px">
+                Categories
+              </li>
+
+              <li><a class="fs-25px white weight-5" href="#">Photos</a></li>
+              <li><a class="fs-25px white weight-5" href="#"> Graphics </a></li>
+              <li><a class="fs-25px white weight-5" href="#">UI Design </a></li>
+              <li>
+                <a class="fs-25px white weight-5" href="#"> Web Theme </a>
+              </li>
+              <li><a class="fs-25px white weight-5" href="#"> Fonts </a></li>
+              <li><a class="fs-25px white weight-5" href="#"> Add-Ons </a></li>
+            </div>
+            <div class="footer-list">
+              <li class="footer-list-title red fs-27px weight-8 mb-5px">
+                For members
+              </li>
+
+              <li><a class="fs-25px white weight-5" href="#">Cart</a></li>
+              <li><a class="fs-25px white weight-5" href="#">Login</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-100px bg-darkest-blue">
+        <div class="container-wrapper">
+          <div class="footer-bottom">
+            <div class="footer-form-wrapper mb-40px">
+              <p class="fs-25px white weight-6 text-center mb-30px">
+                Subscribe to newsletter
+              </p>
+              <form action="" class="footer-form">
+                <div class="form-input">
+                  <img src="./assets/images/mail.png" alt="" />
+                  <input
+                    type="text"
+                    placeholder="Your email"
+                    class="fs-25px gray weight-6"
+                  />
+                </div>
+                <button
+                  type="submit "
+                  class="bg-red white fs-24px weight-5 pointer"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+
+            <div class="footer-rights">
+              <p class="fs-20px white weight-5">
+                @ All rights reserved. Developer 360
+              </p>
+
+              <div class="footer-rights-links">
+                <a href="#" class="fs-20px white weight-5">About us</a>
+                <a href="#" class="fs-20px white weight-5">Contact us </a>
+                <a href="#" class="fs-20px white weight-5">Privacy Policy </a>
+                <a href="#" class="fs-20px white weight-5"
+                  >Terms & Conditions
+                </a>
+                <a href="#" class="fs-20px white weight-5"
+                  >Refund & Cancelletion poliies</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+  </body>
+</html>

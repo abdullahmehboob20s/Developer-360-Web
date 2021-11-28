@@ -1,0 +1,71 @@
+.accordion {
+}
+.link-parent {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 3px 6px #00000080;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid grey;
+  transition: all 0.2s ease;
+  margin-bottom: 0;
+}
+
+.link-parent.active {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.link .accordion-down-arrow {
+  transition: all 0.2s ease;
+}
+.link-parent.active .accordion-down-arrow {
+  transform: rotate(180deg);
+}
+.link {
+  background: white;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.link-parent.active .link {
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 1px 2px #00000080;
+}
+
+.link > div {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.link-accordion {
+  height: 0;
+  background: white;
+  color: white;
+  transition: height 0.2s ease;
+  overflow-y: hidden;
+}
+
+.link-accordion-content {
+  padding: 2rem 2rem;
+}
+
+.order-whatsapp-btn {
+  width: 298px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #03bb16;
+  border-radius: 10px;
+}
