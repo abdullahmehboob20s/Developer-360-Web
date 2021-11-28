@@ -23,8 +23,138 @@
     <link rel="stylesheet" href="./css/dropdown.css" />
     <script defer src="./javascript/dropdown.js"></script>
     <script defer src="./javascript/sidebar.js"></script>
+
+    <script defer src="./javascript/app.js"></script>
   </head>
   <body class="bg-light-blue">
+    <!-- REGISTER STARTS -->
+    <div class="register-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">
+            No Account ? Signup
+          </p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Registration takes less than a minute but gives you full control
+            over your orders.
+          </p>
+        </div>
+        <div class="register-form mb-15px">
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Full Name"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Password"
+          />
+          <input
+            type="text"
+            class="fs-25px weight-4 gray"
+            placeholder="Re-Enter Password"
+          />
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <p class="text-center fs-20px darkest-blue weight-5 mb-15px">or</p>
+
+        <button class="google-login fs-25px weight-5 pointer gray mb-30px">
+          <img src="./assets/images/google-icon.png" alt="" /> Continue with
+          Google
+        </button>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Already have an account ? <a href="#" class="purple">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- REGISTER ENDS -->
+
+    <!-- LOGIN STARTS -->
+    <div class="login-modal-wrapper">
+      <div class="register-modal">
+        <img
+          src="./assets/images/cross-icon.png"
+          alt=""
+          class="cross-icon abc-cross-icon"
+        />
+        <div class="text-center">
+          <p class="fs-25px weight-8 darkest-blue mb-10px">Welcome Back !</p>
+          <p class="fs-18px darkest-blue weight-4 mb-40px">
+            Enter Your Emai & Password to sign in.
+          </p>
+        </div>
+
+        <div class="register-form mb-30px">
+          <div>
+            <label
+              for="email-address"
+              class="fs-25px weight-4 gray block mb-10px"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              id="email-address"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+          <div>
+            <label for="password" class="fs-25px weight-4 gray block mb-10px"
+              >Password</label
+            >
+            <input
+              type="text"
+              id="password"
+              class="fs-25px weight-4 gray w-full"
+            />
+          </div>
+
+          <div class="form-remember mb-20px">
+            <div class="form-group">
+              <input type="checkbox" id="html" />
+              <label for="html" class="fs-25px gray weight-4"
+                >Remember Me</label
+              >
+            </div>
+            <a href="#" class="purple fs-25px weight-4">Forgot Password ?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="pointer fs-25px white bg-purple weight-8 text-center"
+          >
+            Continue
+          </button>
+        </div>
+
+        <div class="register-modal-footer">
+          <p class="text-center fs-20px weight-5 darkest-blue">
+            Not have an account yet ? <a href="#" class="purple">Signup now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN ENDS -->
+
     <!-- NAVBAR STARTS -->
     <nav>
       <div class="container-wrapper">
